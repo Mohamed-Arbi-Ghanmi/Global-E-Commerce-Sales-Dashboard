@@ -7,8 +7,5 @@ __pycache__/
 # Jupyter
 .ipynb_checkpoints/
 
-# Data — raw stays local, cleaned gets committed
-data/raw/
-
 # OS
 .DS_Store
