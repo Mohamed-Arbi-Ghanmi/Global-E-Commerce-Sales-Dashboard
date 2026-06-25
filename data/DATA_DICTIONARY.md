@@ -37,8 +37,8 @@
 | Year | int | Order year extracted from `Order Date` (2014–2017). |
 | Month | int | Order month as integer (1–12). |
 | Quarter | string | Order quarter: `Q1`, `Q2`, `Q3`, or `Q4`. |
-| Year-Month | string | Order year and month in `YYYY-MM` format (e.g. `2016-11`). Useful for time-series grouping in Looker Studio. |
+| Month Start | string | First day of the order month in `YYYY-MM-DD` format (e.g. `2016-11-01`). Parseable as a Date in Looker Studio — use this for month-level time series instead of `Order Date`. |
 | Ship Lag (days) | int | Number of days between `Order Date` and `Ship Date`. Represents order fulfillment/processing time, not delivery time. Range: 0–7. |
 | Profit Margin % | float | Row-level profit margin: `(Profit / Sales) × 100`, rounded to 2 decimal places. |
-| Is Loss | bool | `True` if `Profit < 0`, `False` otherwise. 18.7% of rows are `True`. |
+| Is Loss | int | `1` if `Profit < 0`, `0` otherwise. ~18.7% of rows are `1`. Stored as integer so Looker Studio can aggregate it (e.g. `SUM(Is Loss) / COUNT(Is Loss) * 100` = loss rate %). |
 | Discount Tier | string | Discount bucketed into four levels: `None` (0%), `Low` (1–20%), `Medium` (21–40%), `High` (>40%). |
