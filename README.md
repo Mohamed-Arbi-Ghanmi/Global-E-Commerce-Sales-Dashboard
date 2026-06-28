@@ -35,7 +35,7 @@ Run notebooks in order: `01_EDA.ipynb` → `02_ETL.ipynb`. The ETL notebook writ
 
 ## Dashboard
 
-**Looker Studio:** *(link to be added once published)*
+**Looker Studio:** [View Dashboard](https://datastudio.google.com/s/ssuzRNJDkxo)
 
 ## Key Findings from EDA
 
