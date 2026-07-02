@@ -30,7 +30,6 @@ source /home/mohamed/anaconda3/bin/activate practice_env
 cd notebooks
 jupyter lab
 ```
-
 Run notebooks in order: `01_EDA.ipynb` → `02_ETL.ipynb`. The ETL notebook writes the cleaned file to `data/cleaned/superstore_clean.csv`.
 
 ## Dashboard
